@@ -13,7 +13,18 @@ The general format:
 - **MINOR** version when you add functionality in a backward compatible manner
 - **PATCH** version when you make backward compatible bug fixes
 
+## Install Terraform CLI
+
+### Considerations with the Terraform CLI changes
+
+The Terraform CLI installation instructions have changed due to gpg keyring changes. So we neede to refer to the latest install CLI instructions via Terraform Documentation and change the scripting for installation.
+
+### Refractoring into Bash scripts
+
+
+[Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
 https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/
-https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 https://en.wikipedia.org/wiki/Shebang_(Unix)
 https://en.wikipedia.org/wiki/Chmod
+https://www.gitpod.io/docs/configure/workspaces/workspace-lifecycle
