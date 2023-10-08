@@ -20,4 +20,4 @@ sudo apt update
 
 sudo apt-get install terraform -y
 
-cd /workspace/terraform-beginner-bootcamp-2023
+cd $PROJECT_ROOT
