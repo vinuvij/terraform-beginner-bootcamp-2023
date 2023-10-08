@@ -67,10 +67,38 @@ ChatGPT recommended this format for bash: '#!/bin/sh env bash'
 - for portability for different OS distributions
 - will search the users PATH for the bash executable
 
+https://en.wikipedia.org/wiki/Shebang_(Unix)
+
+#### Execution Considerations
+
 When executing the bash script we can use the './bin' shorthand notation to execute the bash script.
+
+eg. './bin/install_terrafrom_cli'
+
+If we are using a script in gitpod.yml we need to point the script to a program to interpret it.
+
+eg. 'source ./bin/install_terraform_cli'
 
 ### Linux Considerations
 
-https://en.wikipedia.org/wiki/Shebang_(Unix)
+Linux permissions works as follows:
+
+In order to make our bash scripts executable we need to change linux permission for the file to be executable at the user mode.
+
+'''sh
+chmod u+x ./bin/install_terraform_cli
+'''
+
+Alternatively:
+
+'''sh
+chmod 744 ./bin/install_terraform_cli
+'''
+
 https://en.wikipedia.org/wiki/Chmod
+
+### Github Lifecycle (Before, Init, Command)
+
+We need to be careful when using Init because it will not rerun if we restart an existing workspace.
+
 https://www.gitpod.io/docs/configure/workspaces/workspace-lifecycle
