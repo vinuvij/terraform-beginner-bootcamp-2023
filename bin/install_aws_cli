@@ -11,4 +11,4 @@ sudo ./aws/install
  
  aws sts get-caller-identity
 
-cd workspace/terraform-beginner-bootcamp-2023
+cd /workspace/terraform-beginner-bootcamp-2023
